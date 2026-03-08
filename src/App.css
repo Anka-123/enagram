@@ -108,13 +108,11 @@ button:disabled {
   width: 80px;
 }
 
+
 .top-section {
   display: flex;
   align-items: center;
-  padding: 20px;
-  gap: 400px;
-}
-
+justify-content: space-between;}
 .logo {
   flex: 1;
 }
@@ -393,11 +391,90 @@ nav {
 }
 
 /* responsivity */
+
+@media (max-width: 768px) {
+  textarea{
+    min-width: 150px;
+    min-height: 200px;
+  }
+  .menubar-title {
+    display: none;
+  }
+
+  .mobile-dropdown {
+    display: block;
+    width: 100%;
+  }
+
+
+  .language {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #182b57;
+    font-weight: 600;
+  }
+
+  .lang-icon {
+    font-weight: bold;
+  }
+
+  .dropdown {
+    font-size: 14px;
+  }
+
+
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 400px;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #132450;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  .nav-item {
+    width: 100%;
+  } 
+    .menu-btn {
+    display: block;
+  }
+
+  .collapse-btn {
+    display: none;
+  }
+  .sidebar-user {
+    display: none;
+  }
+}
 @media(max-width:450px)
 {
   .top-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
   gap: 200px;
 }
+
 
   .topbar {
   display: flex;
@@ -439,74 +516,4 @@ nav {
     justify-content: center;
   }
 
-}
-
-@media (max-width: 768px) {
-textarea{
-  min-width: 150px;
-  min-height: 200px;
-}
-  .menubar-title {
-    display: none;
-  }
-
-  .mobile-dropdown {
-    display: block;
-    width: 100%;
-  }
-
-
-.language {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #182b57;
-  font-weight: 600;
-}
-
-.lang-icon {
-  font-weight: bold;
-}
-
-.dropdown {
-  font-size: 14px;
-}
-
-
-  .layout {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-
- .nav {
-  display: none;
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  background: #132450;
-  padding: 10px 0;
-  z-index: 1000;
-}
- .nav-item {
-  width: 100%;
-} 
-.menu-btn {
-    display: block;
-  }
-
-  .collapse-btn {
-    display: none;
-  }
-  .sidebar-user {
-    display: none;
-  }
 }
